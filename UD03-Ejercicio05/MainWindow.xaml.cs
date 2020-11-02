@@ -16,11 +16,7 @@ namespace UD03_Ejercicio05
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Button b = (Button)sender;
-            textoTextBlock.Text += b.Content;
-
-
-
+            textoTextBlock.Text += ((Button)sender).Content;
         }
     }
 }
