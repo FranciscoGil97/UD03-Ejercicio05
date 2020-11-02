@@ -9,15 +9,19 @@
     Title="Calculadora"
     Height="450"
     Width="400"
+    MinHeight="350"
+    MinWidth="250"
     Icon="/calculadora.ico">
     <Grid>
 
         <Grid.RowDefinitions>
+            <RowDefinition
+                Height="2*" />
             <RowDefinition />
             <RowDefinition />
             <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition
+                Height="50" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -31,12 +35,13 @@
             Grid.Row="0"
             Grid.Column="0"
             Grid.ColumnSpan="3">
-            <Viewbox HorizontalAlignment="Right">
-            <TextBlock
-                x:Name="textoTextBlock"
-                VerticalAlignment="Center"
-                TextWrapping="NoWrap"
-                FontSize="70"/>
+            <Viewbox
+                HorizontalAlignment="Right">
+                <TextBlock
+                    x:Name="textoTextBlock"
+                    VerticalAlignment="Center"
+                    TextWrapping="NoWrap"
+                    FontSize="70" />
             </Viewbox>
         </Border>
         <Button
@@ -44,8 +49,8 @@
             Grid.Row="1"
             Grid.Column="0"
             FontSize="40"
-            Margin="5" 
-            Click="Button_Click"/>
+            Margin="5"
+            Click="Button_Click" />
         <Button
             Content="2"
             Grid.Row="1"
@@ -105,14 +110,11 @@
             Margin="5"
             Click="Button_Click" />
         <Button
-            Height="60"
             Content="0"
             Grid.Row="4"
             Grid.Column="0"
             Grid.ColumnSpan="3"
-            FontSize="40"
-            Margin="5"
-            VerticalAlignment="Center"
+            FontSize="30"
             Click="Button_Click" />
     </Grid>
 </Window>
