@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:UD03_Ejercicio05"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style
+            TargetType="Button">
+            <Setter
+                Property="FontSize"
+                Value="40" />
+            <Setter
+                Property="Margin"
+                Value="5" />
+            <EventSetter
+                Event="Click"
+                Handler="Button_Click" />
+        </Style>
     </Application.Resources>
 </Application>
